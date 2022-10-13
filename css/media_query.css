@@ -1,0 +1,108 @@
+@media screen and (min-width: 1200px) {
+  /* Global Style */
+  .container {
+    max-width: 80%;
+  }
+}
+
+@media screen and (max-width: 991.2px){
+  /* Navbar */
+  .navbar-brand {
+    padding: 0 4px;
+  }
+  
+  nav .navbar-toggler {
+    box-shadow: none !important;
+    padding: 12px 20px 22px;
+    border: 2px solid transparent;
+  }
+
+  nav .navbar-toggler[aria-expanded="true"] {
+    border-color: var(--secondary-color);
+    border-radius: 25px;
+  }
+
+  nav .navbar-toggler span {
+    position: relative;
+    display: inline-block;
+    height: 2px;
+    width: 14px;
+    background-color: #fff;
+  }
+
+  nav .navbar-toggler span::after,
+  nav .navbar-toggler span::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    right: 0;
+    height: 2px;
+    background-color: #fff;
+  }
+
+  nav .navbar-toggler span::after {
+    bottom: -6px;
+  }
+
+  nav .navbar-toggler span::before {
+    top: -6px;
+  }
+
+  nav .navbar-toggler[aria-expanded="true"] span,
+  nav .navbar-toggler[aria-expanded="true"] span::after,
+  nav .navbar-toggler[aria-expanded="true"] span::before {
+    background-color: var(--secondary-color);
+  }
+
+  nav .navbar-nav {
+    background-color: #262936;
+    border-radius: 15px;
+    margin-top: 15px;
+    text-align: center;
+  }
+
+  nav .navbar-nav .nav-item {
+    margin: 0 !important;
+    padding: 12px;
+  }
+
+  nav .navbar-nav .nav-item:not(:last-child) {
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  }
+
+  .navbar .navbar-nav .nav-link:hover,
+  .navbar .navbar-nav .nav-link.active  {
+    border-color: transparent;
+  }
+
+  /* Home */
+  #home .main-card .card-subtitle {
+    font-size: 55px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  /* Home */
+  #home .main-card:first-of-type .card{
+    border-radius: 12px 12px 0 0 !important;
+    -webkit-border-radius: 12px 12px 0 0 !important;
+    -moz-border-radius: 12px 12px 0 0 !important;
+    -ms-border-radius: 12px 12px 0 0 !important;
+    -o-border-radius: 12px 12px 0 0 !important;
+  }
+
+  #home .main-card:last-of-type .card {
+    border-radius: 0 0 12px 12px !important;
+    -webkit-border-radius: 0 0 12px 12px !important;
+    -moz-border-radius: 0 0 12px 12px !important;
+    -ms-border-radius: 0 0 12px 12px !important;
+    -o-border-radius: 0 0 12px 12px !important;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  /* Home */
+  #home .main-card .card-subtitle {
+    font-size: 40px;
+  }
+}

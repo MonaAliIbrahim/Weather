@@ -1,0 +1,86 @@
+#home {
+  background-image: url(../images/space-bg.jpg);
+  background-repeat: no-repeat;
+  background-color: var(--primary-color);
+  background-position: 100% 100%;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+#home .form-control,
+#home .main-card {
+  opacity: 0.9;
+}
+
+#home .main-card:first-of-type .card,
+#home .main-card:last-of-type .card {
+  background-color: #323544;
+}
+
+#home .main-card:nth-last-of-type(2) .card {
+  background-color: #262936;
+}
+
+#home .main-card .card-header {
+  font-size: 14px;
+  line-height: 21px;
+  color: var(--text-color);
+  text-transform: capitalize;
+}
+
+#home .main-card .card-body {
+  padding: 30px 20px 10px;
+}
+
+#home .main-card:nth-last-of-type(2) .card-body,
+#home .main-card:last-of-type .card-body {
+  padding: 50px 20px;
+}
+
+#home .main-card .card-title {
+  font-size: 18px;
+  line-height: 27px;
+  color: var(--text-color);
+}
+
+#home .main-card .card-subtitle {
+  font-weight: 700;
+  font-size: 90px;
+  line-height: 135px;
+  color: #fff;
+}
+
+#home .main-card p {
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 21px;
+  color: var(--secondary-color);
+}
+
+#home .main-card h3 {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 36px;
+  color: #fff;
+}
+
+#home .main-card h6 {
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 24px;
+  color: var(--text-color);
+}
+
+#home .main-card .card-footer {
+  background-color: transparent;
+  border: none;
+  padding: 0 20px 30px;
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 21px;
+  color: var(--text-color);
+}
+
+#home .main-card .card-footer.placeholder {
+  background-color: var(--primary-color);
+}
