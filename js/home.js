@@ -150,7 +150,7 @@ function getLocation() {
 }
 
 async function getWeather(location = 'cairo') {
-  let response = await fetch(`http://api.weatherapi.com/v1/forecast.json?key=${API_KEY}&q=${location}&days=3`),
+  let response = await fetch(`https://api.weatherapi.com/v1/forecast.json?key=${API_KEY}&q=${location}&days=3`),
       data = await response.json();
   renderHomePage(data);
 }
