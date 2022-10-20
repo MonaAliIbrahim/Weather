@@ -5,6 +5,7 @@
   background-position: 100% 100%;
   background-repeat: no-repeat;
   background-size: cover;
+  min-height: calc(100vh - 400);
 }
 
 #home .form-control,
