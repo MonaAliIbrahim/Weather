@@ -96,7 +96,7 @@ function renderHomePage(response) {
             <div class="card-body">
               <h2 class="card-title">${response.location.name}</h2>
               <div class="d-flex justify-content-between align-items-center flex-wrap">
-                <h3 class="card-subtitle">${response.current.temp_c}<sup>o</sup>C</h3>
+                <h3 class="card-subtitle">${Math.round(response.current.temp_c)}<sup>o</sup>C</h3>
                 <img src="http:${response.current.condition.icon}" alt="Sun Image" />
               </div>
               <p class="my-3">${response.current.condition.text}</p>
@@ -122,8 +122,8 @@ function renderHomePage(response) {
             <div class="card-header">${weekdays[dayIndex + 1]}</div>
             <div class="card-body">
               <img src="http:${forecast[1].day.condition.icon}" alt="Sun Image" class="mb-3"/>
-              <h3>${forecast[1].day.maxtemp_c}<sup>o</sup>C</h3>
-              <h6>${forecast[1].day.mintemp_c}<sup>o</sup></h6>
+              <h3>${Math.round(forecast[1].day.maxtemp_c)}<sup>o</sup>C</h3>
+              <h6>${Math.round(forecast[1].day.mintemp_c)}<sup>o</sup></h6>
               <p class="my-3">${forecast[1].day.condition.text}</p>
             </div>
           </div>
@@ -133,8 +133,8 @@ function renderHomePage(response) {
             <div class="card-header">${weekdays[dayIndex + 2]}</div>
             <div class="card-body">
               <img src="http:${forecast[2].day.condition.icon}" alt="Sun Image" class="mb-3"/>
-              <h3>${forecast[2].day.maxtemp_c}<sup>o</sup>C</h3>
-              <h6>${forecast[2].day.mintemp_c}<sup>o</sup></h6>
+              <h3>${Math.round(forecast[2].day.maxtemp_c)}<sup>o</sup>C</h3>
+              <h6>${Math.round(forecast[2].day.mintemp_c)}<sup>o</sup></h6>
               <p class="my-3">${forecast[2].day.condition.text}</p>
             </div>
           </div>
